@@ -7,24 +7,23 @@
 //
 
 import SpriteKit
- 
+
 class GameOverScene: SKScene {
-  override func didMove(to view: SKView) {
- 
-    let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-    myLabel.text = "Game Over"
-    myLabel.fontSize = 65
-    myLabel.position = CGPoint(x:frame.midX, y:frame.midY)
-    addChild(myLabel)
- 
-    run(SKAction.sequence([
-      SKAction.wait(forDuration: 1.0),
-      SKAction.run({
-        let transition = SKTransition.fade(withDuration: 1.0)
-        let scene = GameScene(fileNamed:"GameScene")
-        scene!.scaleMode = .aspectFill
-        scene!.size = self.size
-        self.view?.presentScene(scene!, transition: transition)
-      })]))
-  }
+    override func didMove(to view: SKView) {
+
+        let label = SKLabelNode(fontNamed:"Chalkduster")
+        label.text = "Game Over"
+        label.fontSize = 65
+        label.position = CGPoint(x:frame.midX, y:frame.midY)
+        addChild(label)
+
+        run(.sequence([
+            .wait(forDuration: 1.0),
+            .run{
+                let scene = GameScene(fileNamed:"GameScene")
+                scene!.scaleMode = .aspectFill
+                scene!.size = self.size
+                self.view?.presentScene(scene!, transition: .fade(withDuration: 1.0))
+            }]))
+    }
 }

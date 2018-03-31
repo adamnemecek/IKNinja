@@ -146,7 +146,7 @@
 					D90F6C4D19BC101200A203F4 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = KFCNEC27GU;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -316,7 +316,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kentoh.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "IK-Ninja";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -330,7 +331,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kentoh.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "IK-Ninja";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
